@@ -1,0 +1,49 @@
+body{
+    font-family: Garamond;
+    text-align: center;
+    transform:translate(0px, -22px)
+}
+header, footer{
+    background-color: #8C7B75;
+    height: 70px;
+    color: white;
+    font-size: 150%;
+}
+
+#lewy, #prawy{
+    background: #BCAAA4;
+    height: 400px;
+    width: 35%;
+    position: relative;
+    float: left;
+}
+#main{
+    background: #EFDCD5;
+    height: 400px;
+    width: 30%;
+    position: relative;
+    float: left;
+
+}
+ol{
+    list-style-type:lower-alpha;
+}
+li{
+    text-align: left;
+}
+img{
+    border: 1px dashed #8C7B75;
+   
+    border-radius: 10%;
+    padding: 5px;
+}
+#wyn{
+    margin-top: 100px;
+    border: 1px solid #8C7B75;
+}
+footer{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+

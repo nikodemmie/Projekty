@@ -1,0 +1,13 @@
+1.
+	SELECT nazwa from towary WHERE promocja = 1; 
+
+
+2.
+	SELECT cena from towary WHERE nazwa="Markery 4 szt.";
+ 
+
+3.
+	SELECT dostawcy.id, dostawcy.nazwa,COUNT(towary.id) as liczba_towarów from dostawcy INNER JOIN towary on dostawcy.id=towary.idDostawcy GROUP by towary.idDostawcy; 
+
+4.
+	ALTER TABLE dostawcy ADD Informacje TEXT AFTER adres; 

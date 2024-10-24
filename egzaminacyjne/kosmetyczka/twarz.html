@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <div id="left-up">
+        <h2>W ofercie</h2>
+        <ul><li>Zabiegi na twarz
+            <ol>
+                <li>Piling</li>
+                <li>Maska</li>
+                <li>Regulacja brwi</li>
+            </ol></li>
+            <li>Masaż</li>
+            <li>Dietyoczyszczające</li>
+        </ul>
+        <a href="twarz.html">Zabiegi na twarz</a>
+        <a href="index.html">Do strony głównej</a>
+
+    </div>
+    
+    
+    <div id="right-up"><h1>Salon Kosmetyczny</h1></div>
+    <div id="right-down"><h2>Sprawdź cenę swojej wizyty</h2>
+    Piling<input type="checkbox" id="pil"><br>
+    Maska<input type="checkbox" id="maska"><br>
+    Masaż twarzy<input type="checkbox" id="masaz"><br>
+    Regulacja brwi<input type="checkbox" id="regul"><br>
+    <button onclick="licz()">Sprawdz cene</button>
+    <div id="wyn"></div>
+
+    </div>
+    <div id="left-down"><img src="obraz1.jpg" alt="Kosmetyczka"></div>
+
+    <footer><p>Autor: Nikodem Miedzinski</p></footer>
+    <script>
+        function licz(){
+            var wyn= 0
+            var pil = document.getElementById('pil');
+        if( pil.checked == true)
+        {
+            wyn+= 45;
+        }
+        if(document.getElementById('maska').checked == true)
+        {
+            wyn+= 30;
+        }
+        if(document.getElementById('masaz').checked == true)
+        {
+            wyn+= 20;
+        }
+        if(document.getElementById('regul').checked == true)
+        {
+            wyn+= 5;
+        }
+        document.getElementById('wyn').innerHTML = "cena zabiegów "+wyn+", gdzie "+ wyn+ " oznacza całkowitą cenę wybranych zabiegów";
+        }
+    </script>
+</body>
+</html>

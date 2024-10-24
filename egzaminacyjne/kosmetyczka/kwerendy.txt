@@ -1,0 +1,7 @@
+SELECT nazwa, cena FROM uslugi WHERE cena<30; 
+
+SELECT sum(cena), rodzaj from uslugi GROUP BY rodzaj;
+
+CREATE USER 'kosmetyczka'@'localhost' identified by 'Kosmet34'; 
+
+GRANT SELECT,INSERT on uslugi to 'kosmetyczka'@'localhost'; 
